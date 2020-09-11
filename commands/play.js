@@ -11,6 +11,8 @@ exports.run = async (client, message, args) => {
 
     const aTrackIsAlreadyPlaying = client.player.isPlaying(message.guild.id);
 
+    message.channel.send("Searching...");
+
         //If there's already a track playing 
         if(aTrackIsAlreadyPlaying){
 
